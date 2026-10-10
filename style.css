@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #e5e5e5;
+}
+
+
+/* Calculator */
+
+.calculator {
+    width: 320px;
+
+    padding: 20px;
+
+    background-color: #222;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px #999;
+}
+
+
+/* Display */
+
+#display {
+    width: 100%;
+
+    height: 65px;
+
+    margin-bottom: 15px;
+
+    padding: 10px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 28px;
+
+    text-align: right;
+
+    background-color: white;
+}
+
+
+/* Buttons */
+
+.buttons {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+button {
+    height: 60px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    background-color: #f2f2f2;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+
+/* Operators */
+
+.operator {
+    background-color: orange;
+
+    color: white;
+}
+
+
+/* Equal */
+
+.equal {
+    background-color: green;
+
+    color: white;
+
+    grid-column: span 2;
+}
+
+
+/* Clear */
+
+.clear {
+    background-color: red;
+
+    color: white;
+}
+
+
+/* Responsive */
+
+@media (max-width: 400px) {
+
+    .calculator {
+        width: 90%;
+    }
+
+}
